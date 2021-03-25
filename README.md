@@ -1,5 +1,6 @@
 # Generic Landing Page for brand
 Responsive customizable landing page using only HTML5 and CSS.
+
 View: https://braulio111.github.io/generic-landing-page/
 
 ## Design
