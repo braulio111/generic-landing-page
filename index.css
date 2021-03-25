@@ -1,0 +1,492 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+main {
+  background-color: #000;
+}
+
+/* Header */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  height: auto;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo, .links {
+  display: flex;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 100;
+  align-self: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links li {
+  list-style: none;
+  margin: 20px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+
+.links li a:hover {
+  color: #fff;
+}
+
+.menu {
+  display: none;
+}
+
+/* First content */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.content-info {
+  margin: 30px;
+  max-width: 500px;
+}
+
+.content-info button {
+  background-color: #000;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.content-info button:hover {
+  background-color: #ffa500;
+  color: black;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: 500ms;
+}
+
+.content-info input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.content-image {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+/* Gradient effect on title only supported by Chrome & Safari */
+.gradient-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(#777777, #ffb923);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-info p {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #888888;
+}
+
+.socials-icons {
+  color: #888888;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.socials-icons i {
+  font-size: 30px;
+}
+
+.socials-icons i:hover {
+  cursor: pointer;
+  animation: icon-hover;
+  animation-duration: 4s;
+  color: #fff;
+}
+
+@keyframes icon-hover {
+  0% { font-size: 30px; }
+  50% { font-size: 40px; }
+  100% { font-size: 30px; }
+}
+
+/* Second content */
+
+.lonely-title {
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.content-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.build {
+  max-width: 450px;
+}
+
+.image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #888888;
+}
+
+.quote {
+  display: flex;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.quote span {
+  color: #888888;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.build h2 {
+  color: #888888;
+}
+
+.text {
+  color: #fff;
+  text-align: justify;
+}
+
+.testimony {
+  margin: 10px 0 10px 20px;
+}
+
+.testimony-image {
+  width: 400px;
+  height: 250px;
+  background-color: #888888;
+  border-radius: 3px;
+}
+
+.testimony-image, .build {
+  margin: 40px;
+}
+
+.testimony h3 {
+  margin-bottom: 10px;
+}
+
+/* Third content */
+
+.content-3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.content-3 i {
+  color: #fff;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.content-3  p {
+  color: #888888;
+  font-size: 15px;
+}
+
+.content-3 h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.content-3 div {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.savings, .effort {
+  color: #fff;
+}
+
+/* Fourth content */
+
+.content-4 {
+  margin-top: 100px;
+}
+
+.savings {
+  font-size: 42px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.effort {
+  margin: 10px;
+  text-align: center;
+  color: #b9b9b9;
+  margin-bottom: 50px;
+}
+
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.download div {
+  width: 50%;
+}
+
+.download i {
+  margin-right: 10px;
+}
+
+.download h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.download input {
+  padding: 10px;
+  width: 230px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #181818;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.download button {
+  background-color: #181818;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.download button:hover {
+  background-color: #ffa500;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: 500ms;
+}
+
+.web-app, .desktop-app {
+  color: #fff;
+  margin: 10px;
+  padding: 30px;
+  background-color: #0f0f0f;
+  max-width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+.web-app p, .desktop-app p {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.links-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 140px 0px 140px;
+  justify-content: space-around;
+}
+
+.links-footer div {
+  margin: 10px;
+}
+
+.links-footer h1, .information i {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.links-footer ul {
+  margin-top: 40px;
+}
+
+.links-footer li {
+  margin-top: 15px;
+  color: #888888;
+}
+
+.links-footer li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.links-footer-2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 190px 50px 190px;
+  justify-content: space-around;
+}
+
+.links-footer-2 ul {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.links-footer-2 ul li:hover {
+  cursor: pointer;
+  color: #888888;
+}
+
+.links-footer-2 li, .links-footer-2 h3 {
+  margin: 10px;
+}
+
+
+@media (max-width: 769px) {
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 5px;
+  }
+
+  .folder-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .content input {
+    width: 100%;
+  }
+
+  .content button {
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .links-footer {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .links-footer-2 {
+    padding: 50px 50px 50px 50px;
+  }
+
+  .links-footer-2 :nth-child(2) {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .savings {
+    font-size: 30px;
+  }
+
+  .download input {
+    width: 100%;
+  }
+  
+  .download button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
