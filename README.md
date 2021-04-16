@@ -2,9 +2,10 @@
 
 Responsive customizable landing page using only HTML5 and CSS.
 
+## Design
 View: https://braulio111.github.io/generic-landing-page/
 
-## Design
+
 <img width="1440" alt="Captura de Pantalla 2021-03-25 a la(s) 16 52 59" src="https://user-images.githubusercontent.com/66181337/112553828-d85e6400-8d8a-11eb-8f5e-f03795e19f80.png">
 
 <img width="1440" alt="Captura de Pantalla 2021-03-25 a la(s) 16 53 27" src="https://user-images.githubusercontent.com/66181337/112553883-f1671500-8d8a-11eb-9aaf-e83a99ea5681.png">
